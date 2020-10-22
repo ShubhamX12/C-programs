@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() { 
+    int a[5];
+    int i,j,k=0,l;
+    printf("Enter number to search :");
+    scanf("%d",&l);
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<5;i++)
+    {
+            if(l==a[i])
+            {
+              k=k+1;
+            }
+    }
+      printf("%d",k);
+    return 0;
+}
