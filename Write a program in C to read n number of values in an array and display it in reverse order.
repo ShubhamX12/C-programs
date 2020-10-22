@@ -1,0 +1,17 @@
+#include <stdio.h>
+ 
+
+int main() { 
+    int i,j;
+    int a[5];
+    printf("Enter array element:");
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(j=4;j>-1;j--)
+    {
+        printf("%d\t",a[j]);
+    }
+    return 0;
+}
