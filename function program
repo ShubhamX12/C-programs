@@ -1,0 +1,24 @@
+ #include <stdio.h>
+ //function with no aruagement and no return value
+ void largest();
+
+int main()
+{ 
+    largest();
+    return 0;
+}
+void largest()
+{
+    int a[5]={1,2,3,4,5};
+    int l=a[0],i;
+    for(i=1;i<5;i++)
+    {
+        
+        if(l<a[i])
+        {
+            l=a[i];
+        }
+    }
+    printf("\n Largest element:-%d",l);
+     
+}
