@@ -1,0 +1,29 @@
+  #include <stdio.h>
+ //function with aruagement and no return value
+ void palindrome(int);
+
+int main()
+{ 
+    int n=121;
+    palindrome(n);
+    return 0;
+}
+void palindrome(int n)
+{
+    int temp=n,rem,rev=0;
+    while(n>0)
+    {
+        rem=n%10;
+        rev=rev*10+rem;
+        n=n/10;
+    }
+    
+    if(temp==rev)
+    {
+        printf("\n Palindrome number");
+    } 
+    else
+    {
+        printf("\n not Palindrome");
+    }
+}
